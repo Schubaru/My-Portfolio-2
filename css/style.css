@@ -1,0 +1,169 @@
+/*navbar*/
+.navbar {
+    background: #ffffff;
+    width: 100%;
+    height: auto;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+    margin-bottom: 15px;
+
+}
+ul {
+    display: flex;
+    width: fit-content;
+    margin: 0 auto;
+    list-style: none;
+    position: relative;
+    text-align: center;
+}
+ul li {
+    padding 20px; 
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #989898;
+    text-align: center;
+    transition: 0.15s linear;
+    font-family: 'montserrat';
+    margin: 20px;
+}
+ul li:hover {
+    cursor: pointer;
+    color: #0154FA;
+}
+.active {
+    color: #0154FA;
+}
+.inactive {
+    color: #989898;
+}
+/*.underline {
+    position: absolute;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    z-index: 3;
+    display: block;
+    background: #0154FA;
+    transition: 0.2s ease-in-out;
+}*/
+
+/*new nav*/
+
+/*hero section*/
+.home {
+    background: url("../images/bermuda.png") fixed no-repeat;
+    margin: 0 auto;
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+}
+.homeContent {
+    margin-left: 100px;
+    margin-top: 80px;
+    height: 600px;
+}
+
+#bioText {
+    font-family: 'open sans';
+    color: white;
+    margin-top: 40px;
+}
+#name {
+    color: white;
+    font-family: 'montserrat';
+    margin-bottom: -15px;
+}
+#title {
+    color: white;
+    font-family: 'montserrat';
+    font-weight: 69;
+}
+.hero {
+    padding: 80px;
+}
+
+/*My Work*/
+.myWork {
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 50%;
+}
+.section {
+    margin: 0 auto;
+    font-family: 'montserrat';
+    padding: 25px;
+    width: 50%;
+}
+.workContainer{
+    box-shadow:  0 1px 3px rgba(0, 0, 0, 0.12);
+    display: flex;
+    border-radius: 5px;
+    height: 200px;
+    width: 600px;
+    align-items: center;
+    margin: 20px;
+    padding: 0;
+}
+.workContainer:hover {
+    transition: margin-top 2s ease-in-out;
+}
+.workImg {
+    height: 100px;
+    width: 100px;
+}
+.workTitle {
+    font-family: 'montserrat';
+}
+.description {
+    font-family: 'open sans';
+}
+.workContent {
+    margin: auto;
+    padding: auto;
+}
+.workButton {
+    background-color: #0154FA;
+    color: white;
+    border-radius: 5px;
+}
+
+/*skill cards*/
+.skills {
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+}
+.cardContainer {
+    display: flex;
+}
+.card {
+    height: 300px;
+    width: 33%;
+    box-shadow:  0 4px 6px rgba(0, 0, 0, 0.22);
+    margin: 0 auto;
+    padding: 15px;
+    border-radius: 10px;
+}
+.card, .card-img-top {
+    text-align: center;
+}
+.card-img-top {
+    height: 100px;
+    width: 100px;
+}
+.cardTitle {
+    font-family: 'montserrat';
+}
+.card-text {
+    font-family: 'open sans';
+}
+/*footer*/
+.footer {
+    background-color: #0154FA; 
+    color: white;
+    font-family: 'open sans';
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 40px;
+}
