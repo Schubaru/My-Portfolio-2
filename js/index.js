@@ -2,6 +2,14 @@
   //  $(this).removeClass("active").addClass("inactive");
 //});
 
+$(document).ready(function(){
+  $("button").click(function(){
+    $(".card").animate({
+      width: 'toggle'
+    });
+  });
+});
+
 $(".tabItem").on("click", function(){
     $(this).toggleClass("active");
     if ($(this).hasClass("inactive")){
