@@ -7,6 +7,11 @@
     margin-bottom: 15px;
     position: fixed;
     margin-top: -10px;
+    display: flex;
+}
+.navbar .logo {
+    float: left;
+    padding: 20px;
 }
 ul {
     display: flex;
@@ -15,6 +20,7 @@ ul {
     list-style: none;
     position: relative;
     text-align: center;
+    padding-right: 220px;
 }
 ul li {
     padding 20px; 
@@ -111,6 +117,7 @@ ul li:hover {
 }
 .workContainer:hover {
     transition: margin-top 2s ease-in-out;
+    transform: translateY(-15px);
 }
 .workImg {
     height: 100px;
@@ -126,26 +133,47 @@ ul li:hover {
     margin: auto;
     padding: auto;
 }
-.workButton {
-    background-color: #0154FA;
-    color: white;
-    border-radius: 10px;
-    margin: 0 auto;
-    text-align: center;
-    height: 69px;
-    width: 250px;
-    font-family: 'open sans';
-    font-size: 20px;
-    font-weight: 100;
-    letter-spacing: 2px;
-    outline: none;
-    border: none;
-}
 #cardButton {
     margin: 0 auto;
     text-align: center;
     padding-bottom: 100px;
     padding-top: 20px;
+}
+
+/*new work grid*/
+.featuredWork {
+    margin: 0 auto;
+}
+.featuredWork, .section {
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 40px;
+}
+.gridContainer {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+    text-align: center;
+    width: 50%;
+    grid-gap: 40px;
+}
+.gridCard {
+    height: auto;
+    width: 100%;
+    box-shadow:  0 1px 3px rgba(0, 0, 0, 0.22);
+    border-radius: 6px;
+    background-color: #F0F5FF;
+}
+.work-card-img {
+    width: 100px;
+    height: 100px;
+}
+.cardStuff {
+    
+}
+.work-card-heading {
+    font-family: 'montserrat';
 }
 
 /*skill cards*/
@@ -194,4 +222,10 @@ ul li:hover {
     padding-top: 20px;
     padding-bottom: 20px;
     margin-top: 40px;
+}
+
+@media only screen and (max-width: 600px) {
+    .gridContainer {
+        
+    }
 }
